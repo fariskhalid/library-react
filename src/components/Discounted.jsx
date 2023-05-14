@@ -4,7 +4,7 @@ import { Book } from "./ui/Book";
 
 const Discounted = () => {
   return (
-    <section id="recnt">
+    <section id="recent">
       <div className="container">
         <div className="row">
           <h2 className="section__title">

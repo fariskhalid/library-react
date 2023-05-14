@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Book } from "../components/ui/Book";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Books = ({ books: initialBooks }) => {
   const [books, setBooks] = useState(initialBooks);
