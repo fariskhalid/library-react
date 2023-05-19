@@ -30,6 +30,7 @@ function App() {
 
   function removeItem(item) {
     setCart(cart.filter(book => book.id !== item.id))
+    console.log("removed", item);
   }
 
   function numberOfItems() {
@@ -58,15 +59,18 @@ function App() {
         />
         <Route
           path="/cart"
-          render={() => <Cart books={books} />}
-          cart={cart}
-          changeQuantity={changeQuantity} 
-          removeItem={removeItem}
+          render={() => (
+            <Cart
+              books={books}
+              cart={cart}
+              changeQuantity={changeQuantity}
+              removeItem={removeItem}
+            />
+          )}
         />
         <Footer />
       </div>
     </Router>
   );
 }
-
 export default App;

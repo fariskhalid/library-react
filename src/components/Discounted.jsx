@@ -1,8 +1,8 @@
 import React from "react";
 import { books } from "../data";
-import { Book } from "./ui/Book";
+import Book from "./ui/Book";
 
-const Discounted = () => {
+function Discounted() {
   return (
     <section id="recent">
       <div className="container">
